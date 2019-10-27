@@ -1,0 +1,59 @@
+BashScripting Cheat sheet
+
+ls = list storage, will give you a list of all the current directorys you are logged into.
+~ = will tell you your home folder.
+$ = tells you are logged in as a standard user and not an administrator.
+joe@dell = who you are and what computer you are logged into.
+root = is the base level of the directory
+pwd = print the Present Working Directory. It will share exactly where you are.
+
+ls Documents/ = will show everything within the documents folder
+ls /home/joe/Documents/ = will show the same but its in absolute path.
+ls -a = shows everything in the directory
+ls -l = long list of the directorys such as permissions..
+
+cd = change directory. cd Documents/ (will move to that directory).
+cd .. = will tell the system to go one level up from where ever you are at
+cd ~ = will take you to the home directory.
+
+file .<input filename> = this will display what the file is. Example (file .face = .face: JPEG image data, JFIF standard 1.01)
+locate = will locate the file for you. 
+sudo = superuserdo
+sudo updatedb = will update database
+which command = will find another command. Example (which cal = /usr/bin/cal)
+
+history = will provide the history of everything you typed in.
+whatis = will show you what the command is. Example (whatis cal = display a calendar and the date of Easter).
+man = manual
+mkdir = will make a directory for you. Example (mkdir Chris = Chris). Type ls to see if it displays
+touch = will allow you to create subfiles within a file location Example (touch file1 file2 file3 = file1 file2 file3)
+cp = copy Example (cp ~/.bashrc bashrc). This put a copy of that file in the location you are currently at on the terminal.
+
+mv = move command or rename a file.
+rm = remove file Example (rm file2 = file removed.)
+rmdir = will remove the directory
+
+cat = will list the commands of a certain file. Example cat -file2
+cat >> (filename) = will put everything you type into that file.  Example cat examplefile = whatever you put in there.
+cat file1 file2 = will put both of these files togther 
+more file1 = will show the full file on the cmd. Press Q to exit.
+less file1 = can view on one page.
+nano = will allow you to edit a file
+cat <file2> = will display that file
+cat >> = will append the file
+cat > = will replace the whole file with a new text
+
+sudo -s = will put you as root user
+su - <input user> = will become that person
+whoami = who is the person that owns the computer
+users = will show you who is logged in
+id = provides details on users
+
+permissions are stored in 3 parts of data
+user r=4, w=2, x-1, group r=4, w=2, x=1 everyone r=4, w=2, x=1
+
+chmod +x <filename> = will allow anyone to execute
+chmod 700 = sets it you and no one else
+chmod 744 = you can read but not execute
+
+killall <program> = will kill the process such as firefox or another program
