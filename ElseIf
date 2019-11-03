@@ -1,0 +1,12 @@
+#When doing an and operator or else if, here are a few examples you can run to get a feel for the syntax.
+
+!#/bin/bash
+
+age=10
+  if [ "$age" -gt 18] && ["$age" -lt 15]
+then
+  echo "Age is correct"
+else
+  echo "Age is not correct"
+fi
+#The command above will print either age is correct or it will print age is not correct depending on the input of age variable. 
